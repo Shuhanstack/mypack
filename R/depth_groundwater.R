@@ -10,23 +10,24 @@
 
 # Set up initial conditions of year = 1 and starting depth to groundwater is 10 meters.
 
-yr = 1
-depth_groundwater = 10
+depth_groundwater = function(depth_groundwater){
 
-# loop using while function
+  yr = 1
 
-while ((depth_groundwater < 80) &&(yr < 50))  {
-  # increase depth
-  depth_groundwater = depth_groundwater + 0.1* depth_groundwater
-  # keep track of time
-  yr = yr + 1
-  yr = ifelse( (yr < 0), NA, yr)  #add error checking
-  }
+  # loop using while function
 
-# Return the yr depth to groundwater surpasses 80m
+  while ((depth_groundwater < 80) &&(yr < 50))  {
+    # increase depth
+    depth_groundwater = depth_groundwater + 0.1* depth_groundwater
+    # keep track of time
+    yr = yr + 1
+    yr = ifelse( (yr < 0), NA, yr)  #add error checking
+    }
 
-yr
+  # Return the yr depth to groundwater surpasses 80m
 
+  return(yr)
+}
 
 
 
