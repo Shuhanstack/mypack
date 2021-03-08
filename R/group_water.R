@@ -3,7 +3,7 @@
 #' This function groups water by its temperature.
 #' @param temperature water temperature in degree C, numeric variable
 #' @return water group based on the temperature
-#' @example water_temp = c(-1, 0, 3, 25, 42, 77, 100, 103) water_groups(water_temp)
+#' @example water_groups(water_temp = c(-1, 0, 3, 25, 42, 77, 100, 103))
 #' @author Shuhan Song
 
 water_groups = function(temperature){

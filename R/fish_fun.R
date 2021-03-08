@@ -4,7 +4,7 @@
 #' @param fish the vector of fish
 #' @param plot whether to plot histogram or not; default is FALSE
 #' @return a list containing the most common fish, the rarest fish, the total number of fish, and a histogram if asked
-#' @example some_fish = c("salmon", "salmon", "tuna", "tuna", "tuna", "cod")   fish_fun(some_fish, plot=TRUE)
+#' @example fish_fun(some_fish = c("salmon", "salmon", "tuna", "tuna", "tuna", "cod"), plot=TRUE)
 #' @author Shuhan Song and Annika Leiby
 
 fish_fun = function(fish, plot=FALSE){
