@@ -17,6 +17,9 @@ a list containing the most common fish, the rarest fish, the total number of fis
 \description{
 function returns the most common fish, the rarest fish, the total number of fish, and a histogram if asked
 }
+\examples{
+fish_fun(some_fish = c("salmon", "salmon", "tuna", "tuna", "tuna", "cod"), plot=TRUE)
+}
 \author{
 Shuhan Song and Annika Leiby
 }
