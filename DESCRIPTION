@@ -9,3 +9,7 @@ Description: This package contains a few amazing functions.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    tidyverse
+Imports: 
+    ggplot2

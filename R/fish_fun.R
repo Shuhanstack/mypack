@@ -7,8 +7,6 @@
 #' @example some_fish = c("salmon", "salmon", "tuna", "tuna", "tuna", "cod")   fish_fun(some_fish, plot=TRUE)
 #' @author Shuhan Song and Annika Leiby
 
-library(tidyverse)
-
 fish_fun = function(fish, plot=FALSE){
   # make sure fish is listed as factor in the vector
   fish_factor = as.factor(fish)
@@ -31,11 +29,11 @@ fish_fun = function(fish, plot=FALSE){
   if(plot == TRUE){
     plottitle = sprintf("There is a total of %d fish.", total_num) # title name
 
-    fish_plot = ggplot(data.frame(fish=fish),
-                  aes(x = fish, fill = fish)) +
-      geom_histogram(stat="count") +
-      labs(title = plottitle) +
-      theme_bw()
+    fish_plot = ggplot2::ggplot(data.frame(fish=fish),
+                  ggplot2::aes(x = fish, fill = fish)) +
+      ggplot2::geom_histogram(stat="count") +
+      ggplot2::labs(title = plottitle) +
+      ggplot2::theme_bw()
 
     # add histogram in the list
     fish_list$"Histogram" = fish_plot
