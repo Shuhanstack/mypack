@@ -15,11 +15,4 @@ depth = function(groundwater_depth){
 }
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> b1e1ec9f0b586ad55677ac2d5d642d0ecede381c
-
-
 
