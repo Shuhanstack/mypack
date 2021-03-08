@@ -14,7 +14,7 @@
 # x is initial depth to groundwater (10m)
 # n is the number of years since year 0
 
-depth = function(x){
+depth = function(groundwater_depth){
   groundwater_depth <- round(x + 0.1*n, digits = 1)
   result <- paste(groundwater_depth, "m", sep = " ")
   return(result)
