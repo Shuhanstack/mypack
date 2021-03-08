@@ -8,14 +8,14 @@
 
 
 depth = function(groundwater_depth){
-  groundwater_depth <- round(x + 0.1*n, digits = 1)
+  groundwater_depth <- round(10 + 0.1*n, digits = 1)
   result <- paste(groundwater_depth, "m", sep = " ")
   return(result)
   groundwater_depth = ifelse( (groundwater_depth < 0), NA, groundwater_depth)  #add error checking
 }
 
 
-depth(yr=0, x=10)
+
 
 
 
