@@ -9,3 +9,4 @@ Description: This package contains a few amazing functions.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.1

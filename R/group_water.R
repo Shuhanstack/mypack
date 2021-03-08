@@ -1,14 +1,16 @@
-#' water groups by its temperature
-#' 
+#' Water groups
+#'
+#' This function groups water by its temperature.
 #' @param temperature water temperature in degree C, numeric variable
 #' @return water group based on the temperature
+#' @example water_temp = c(-1, 0, 3, 25, 42, 77, 100, 103) water_groups(water_temp)
 #' @author Shuhan Song
 
 water_groups = function(temperature){
-  
+
   temperature = as.numeric(temperature)
   group = 1
-  
+
   for (i in 1:length(temperature)){
     group[i] = dplyr::case_when(
       temperature[i] <= 0                         ~ "might be ice",
