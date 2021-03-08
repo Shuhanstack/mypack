@@ -13,6 +13,18 @@
 ## Set a grading scale based on percent scores and add the grading standard and score in one column
 ## Create a table to show the standard and score for each indicator and the overall scores based on response id
 
+################################################################################
+## Description: Set param and return.
+################################################################################
+
+#' Indicator Scores and Standard From Survey Results
+
+#' Take the raw scores and max scores to find the percent for each question
+#' Combine questions based on responses id and category
+#' Find the percent score per indicator based on id by adding the scores within the same category and dividing by the number of questions.
+#' Set a grading scale based on percent scores and add the grading standard and score in one column
+#' Create a table to show the standard and score for each indicator and the overall scores based on response id
+
 #' @param survey_scores, A data set contains survey data with: id, category, score, and max score for ech question
 #' @return scores_table, Return a formattable table with id, and a column for each category as well as the overall score
 #' @author Ruben Sanchez Ramirez
