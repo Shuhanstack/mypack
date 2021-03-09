@@ -1,20 +1,20 @@
 #' Groundwater Category
 #'
-#' This function categorizes a well as "sustainable", "overdrafted", or "critically overdrafted" based on water level
-#' @param level water level in meters, numeric variable
-#' @return category based on the water level
+#' This function categorizes a well as "sustainable", "overdrafted", or "critically overdrafted" based on depth to water in a groundwater well
+#' @param depth to water in meters, numeric variable
+#' @return category based on the depth to water
 #' @author Annika Leiby
 
-gw_category = function(level){
+gw_category = function(depth){
 
-  level = as.numeric(level)
+  depth = as.numeric(depth)
   group = 1
 
-  for (i in 1:length(level)){
+  for (i in 1:length(depth)){
     group[i] = dplyr::case_when(
-      level[i] < 40 ~ "sustainable",
-      level[i] >= 40 & level[i] < 80 ~ "overdrafted",
-      level[i] >= 80 ~ "critical")
+      depth[i] < 40 ~ "sustainable",
+      depth[i] >= 40 & depth[i] < 80 ~ "overdrafted",
+      depth[i] >= 80 ~ "critically overdrafted")
   }
   return(group)
 }
