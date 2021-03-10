@@ -16,7 +16,8 @@ water group based on the temperature
 This function groups water by its temperature.
 }
 \examples{
-water_groups(water_temp = c(-1, 0, 3, 25, 42, 77, 100, 103))
+water_groups(temperature = c(-1, 0, 3, 25, 42, 77, 100, 103))
+water_groups(temperature = water_temp$water_temp)
 }
 \author{
 Shuhan Song
