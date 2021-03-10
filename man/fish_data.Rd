@@ -4,10 +4,12 @@
 \name{fish_data}
 \alias{fish_data}
 \title{Fish Species Vector}
-\format{A data frame with 300 rows and 1 colums
+\format{
+A data frame with 300 rows and 1 colums
 \describe{
 \item{x}{character, salmon, steelhead, tuna, shark, cod}
-}}
+}
+}
 \usage{
 fish_data
 }

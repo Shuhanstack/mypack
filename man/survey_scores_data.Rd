@@ -4,13 +4,15 @@
 \name{survey_scores_data}
 \alias{survey_scores_data}
 \title{Demo survey data from Brazilian Marine Extractive Reserves}
-\format{A data frame with 32 rows and 4 colums
+\format{
+A data frame with 32 rows and 4 colums
 \describe{
 \item{id}{string, response ID}
 \item{category}{(economical, ecological, social, instatution)}
 \item{score}{(integer)}
 \item{max}{ (integer)}
-}}
+}
+}
 \usage{
 survey_scores_data
 }

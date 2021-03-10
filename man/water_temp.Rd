@@ -4,10 +4,12 @@
 \name{water_temp}
 \alias{water_temp}
 \title{Water Temperature Vector}
-\format{A data frame with 8 rows and 1 colums
+\format{
+A data frame with 8 rows and 1 colums
 \describe{
 \item{water_temp}{numeric variable of water temperature in Celcius.}
-}}
+}
+}
 \usage{
 water_temp
 }
