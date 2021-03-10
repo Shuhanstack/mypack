@@ -4,16 +4,16 @@
 \alias{gw_category}
 \title{Groundwater Category}
 \usage{
-gw_category(level)
+gw_category(depth)
 }
 \arguments{
-\item{level}{water level in meters, numeric variable}
+\item{depth}{to water in meters, numeric variable}
 }
 \value{
-category based on the water level
+category based on the depth to water
 }
 \description{
-This function categorizes a well as "sustainable", "overdrafted", or "critically overdrafted" based on water level
+This function categorizes a well as "sustainable", "overdrafted", or "critically overdrafted" based on depth to water in a groundwater well
 }
 \author{
 Annika Leiby
