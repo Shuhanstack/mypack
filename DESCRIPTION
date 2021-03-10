@@ -15,3 +15,5 @@ Depends:
 Imports: 
     ggplot2
 RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

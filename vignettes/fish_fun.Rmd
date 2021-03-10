@@ -1,0 +1,47 @@
+---
+title: "How to use `fish_fun`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fish_fun}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What does the function take?
+
+Function `fish_fun` takes a *vector* of fish names as the input variable `fish`. Users can also specify whether they want the function to return a histogram of the fish names or not. This option is achieved by calling `plot = TRUE` or `plot = FALSE`.  
+
+## What does the function return?
+
+In default, no histogram will be returned (`plot = FALSE`). The function will take the vector of fish names, convert it into a list, and return the most common fish, the rarest fish, and the total number of fish. If `plot = TRUE`, a histogram will be returned in addition to the above three items.
+
+## Example
+
+First, import the package. 
+```{r}
+library(mypack)
+```
+
+Second, create the vector of fish. Recall that the input of `fish_func` should be a vector of characters.
+```{r}
+fish = fish_data$x
+```
+
+- No histogram 
+
+```{r}
+fish_fun(fish, plot = FALSE)
+```
+
+- With histogram
+
+```{r}
+fish_fun(fish = fish, plot = TRUE)
+```
+
+
+
