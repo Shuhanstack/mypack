@@ -1,12 +1,10 @@
 Package: mypack
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Analyze fish, water, groundwate, and surveys
 Version: 0.1.0
 Author: Shuhan, Annika, Ruben
 Maintainer: The package maintainer <shuhan@ucsb.edu>
 Description: This package contains a few amazing functions.
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 Depends: 
